@@ -1,0 +1,14 @@
+A)to run Client go to ne terminal and type the following 
+
+step 1) cd client
+
+step 2)"npm run dev"  ( it gives you the main project )
+
+
+
+
+B)to run server open new terminal and type the following 
+
+step 1) "cd server"
+
+step 2) "npm run dev"
