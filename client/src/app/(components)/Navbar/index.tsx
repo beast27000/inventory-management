@@ -4,6 +4,7 @@ import { setIsDarkMode, setIsSidebarCollapsed } from '@/app/state';
 import { Bell, Menu, Moon, Settings, Sun } from 'lucide-react';
 import Link from "next/link";
 import React from 'react';
+import Image from "next/image";
 
 const Navbar = () => {
     const dispatch = useAppDispatch();
@@ -79,6 +80,13 @@ const Navbar = () => {
           </div>
           <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3" />
           <div className="flex items-center gap-3 cursor-pointer">
+          <Image
+              src="https://s3-inventorymanagement-vishvvesh.s3.us-east-1.amazonaws.com"
+              alt="Profile"
+              width={50}
+              height={50}
+              className="rounded-full h-full object-cover"
+            />
             <span className="font-semibold">Vishvvesh Nagappan</span>
           </div>
         </div>

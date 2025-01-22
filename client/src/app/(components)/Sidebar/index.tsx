@@ -5,6 +5,7 @@ import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, Sliders
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import Image from "next/image";
 
 interface SidebarLinkProps{
     href: string;
@@ -84,7 +85,13 @@ const Sidebar = () => {
                 }`}
             >
 
-                    <div>logo</div>
+          <Image
+              src="https://s3-inventorymanagement-vishvvesh.s3.us-east-1.amazonaws.com/logo.png"
+              alt="Chipware-logo"
+              width={27}
+              height={27}
+              className="rounded w-8"
+            />
                     {!isSidebarCollapsed && (
                         <h1 className="font-bold text-xl leading-tight flex-1 text-center">
                             CHIPWARE <br /> TECHNOLOGIES
